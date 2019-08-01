@@ -1,0 +1,6 @@
+---
+arch: x86_64
+distro: [el7, fc29, fc30, fcraw]
+release_branches:
+  master:
+    - ovirt-master
