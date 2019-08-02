@@ -4,8 +4,9 @@ Name:		wix-toolset-binaries
 Version:	3.11.1
 Release:	1%{?dist}
 Summary:	RPM wrapper for %{name}
-License:	Platform SDK Redistributable EULA
+License:	MS-RL
 Source0:	https://github.com/wixtoolset/wix3/releases/download/wix3111rtm/wix311-binaries.zip
+Source1:	https://raw.githubusercontent.com/wixtoolset/wix3/wix3111rtm/LICENSE.TXT
 URL:		https://github.com/wixtoolset/wix3/releases/tag/wix3111rtm
 BuildArch:	noarch
 
@@ -24,6 +25,7 @@ cp -r %{_builddir}/%{name}/* %{buildroot}%{_datadir}/%{name}
 
 %files
 %{_datadir}/%{name}
+%license LICENSE.TXT
 
 %changelog
 * Thu Aug 01 2019 Gal Zaidman <gzaidman@redhat.com> - 3.11.1-1
