@@ -2,7 +2,7 @@
 
 Name:		wix-toolset-binaries
 Version:	3.11.1
-Release:	%{?dist}
+Release:	1%{?dist}
 Summary:	RPM wrapper for %{name}
 License:	Platform SDK Redistributable EULA
 Source0:	https://github.com/wixtoolset/wix3/releases/download/wix3111rtm/wix311-binaries.zip
