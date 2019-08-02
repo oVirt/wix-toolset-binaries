@@ -24,6 +24,12 @@ mkdir -p %{buildroot}%{_datadir}/%{name}
 cp -r %{_builddir}/%{name}/* %{buildroot}%{_datadir}/%{name}
 
 %files
+# Note:
+# /usr/share/wix-toolset-binaries/sdk/inc should go into -devel
+# /usr/share/wix-toolset-binaries/sdk/*/x86/ should go into i686 arch packages
+# /usr/share/wix-toolset-binaries/sdk/*/lib/x64/ should go into x86_64 arch packages
+# we are not doing it now here since we plan to use the whole package with wine on x86_64 only.
+
 %{_datadir}/%{name}
 %license LICENSE.TXT
 
