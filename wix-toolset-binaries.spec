@@ -23,6 +23,6 @@ cp -r %{_builddir}/%{name}/* %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Tue Aug 01 2019 Gal Zaidman <gzaidman@redhat.com>
+* Thu Aug 01 2019 Gal Zaidman <gzaidman@redhat.com> - 3.11.1-1
 - package wix-toolset-binaries 3.11.1
 
