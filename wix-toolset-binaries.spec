@@ -15,6 +15,9 @@ A package wrapping %{name} to provide dependency features.
 %prep
 %setup -q -c %{name} -n %{name}
 
+%build
+# Nothing to do
+
 %install
 mkdir -p %{buildroot}%{_datadir}/%{name}
 cp -r %{_builddir}/%{name}/* %{buildroot}%{_datadir}/%{name}
