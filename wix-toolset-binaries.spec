@@ -32,6 +32,7 @@ cp -r %{_builddir}/%{name}/* %{buildroot}%{_datadir}/%{name}
 
 %{_datadir}/%{name}
 %license LICENSE.TXT
+%doc README.md
 
 %changelog
 * Thu Aug 01 2019 Gal Zaidman <gzaidman@redhat.com> - 3.11.1-1
