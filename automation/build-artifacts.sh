@@ -18,6 +18,3 @@ find \
     "$PWD/tmp.repos" \
     -iname \*.rpm \
     -exec mv {} exported-artifacts/ \;
-
-rm -rf exported-artifacts
-rm -rf tmp.repos
