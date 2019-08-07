@@ -7,6 +7,7 @@ Summary:	RPM wrapper for %{name}
 License:	MS-RL
 Source0:	https://github.com/wixtoolset/wix3/releases/download/wix3111rtm/wix311-binaries.zip
 Source1:	https://raw.githubusercontent.com/wixtoolset/wix3/wix3111rtm/LICENSE.TXT
+Source2:	https://raw.githubusercontent.com/oVirt/wix-toolset-binaries/master/README.md
 URL:		https://github.com/wixtoolset/wix3/releases/tag/wix3111rtm
 BuildArch:	noarch
 
@@ -15,6 +16,7 @@ A package wrapping %{name} to provide dependency features.
 
 %prep
 %setup -q -c %{name} -n %{name}
+cp %{SOURCE2} .
 
 %build
 # Nothing to do
