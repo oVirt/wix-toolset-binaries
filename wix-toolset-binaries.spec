@@ -2,7 +2,7 @@
 
 Name:		wix-toolset-binaries
 Version:	3.11.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	RPM wrapper for %{name}
 License:	MS-RL
 Source0:	https://github.com/wixtoolset/wix3/releases/download/wix3111rtm/wix311-binaries.zip
@@ -37,6 +37,9 @@ cp -r %{_builddir}/%{name}/* %{buildroot}%{_datadir}/%{name}
 %doc README.md
 
 %changelog
+* Thu Aug 01 2019 Gal Zaidman <gzaidman@redhat.com> - 3.11.1-2
+- package wix-toolset-binaries 3.11.1-2
+
 * Thu Aug 01 2019 Gal Zaidman <gzaidman@redhat.com> - 3.11.1-1
 - package wix-toolset-binaries 3.11.1
 
