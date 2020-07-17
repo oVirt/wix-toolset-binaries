@@ -1,14 +1,15 @@
 %global __os_install_post %{nil}
+%global releasetag wix3112rtm
 
 Name:		wix-toolset-binaries
-Version:	3.11.1
-Release:	2%{?dist}
+Version:	3.11.2
+Release:	1%{?dist}
 Summary:	RPM wrapper for %{name}
 License:	MS-RL
-Source0:	https://github.com/wixtoolset/wix3/releases/download/wix3111rtm/wix311-binaries.zip
-Source1:	https://raw.githubusercontent.com/wixtoolset/wix3/wix3111rtm/LICENSE.TXT
+Source0:	https://github.com/wixtoolset/wix3/releases/download/%{releasetag}/wix311-binaries.zip
+Source1:	https://raw.githubusercontent.com/wixtoolset/wix3/%{releasetag}/LICENSE.TXT
 Source2:	https://raw.githubusercontent.com/oVirt/wix-toolset-binaries/master/README.md
-URL:		https://github.com/wixtoolset/wix3/releases/tag/wix3111rtm
+URL:		https://github.com/wixtoolset/wix3/releases/tag/%{releasetag}
 BuildArch:	noarch
 
 %description
@@ -37,6 +38,9 @@ cp -r %{_builddir}/%{name}/* %{buildroot}%{_datadir}/%{name}
 %doc README.md
 
 %changelog
+* Fri Jul 17 2020 Sandro Bonazzola <sbonazzo@redhat.com> - 3.11.2-1
+- Rebase on upstream 3.11.2
+
 * Thu Aug 01 2019 Gal Zaidman <gzaidman@redhat.com> - 3.11.1-2
 - package wix-toolset-binaries 3.11.1-2
 
